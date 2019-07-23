@@ -84,9 +84,8 @@ fetch('https://jsonplaceholder.typicode.com/photos?_limit=50')
   })
 
 // make Photo HTML from data object
-const makePhotoHTML = photoObject => `<a href=${photoObject.url} class="photo_item">
-        <img src=${photoObject.thumbnailUrl} alt=${photoObject.title}></a>
-    `
+// removed parens around parameter and return statement to show shortened code
+const makePhotoHTML = photoObject => `<a href=${photoObject.url} class="photo_item"><img src=${photoObject.thumbnailUrl} alt=${photoObject.title}></a>`
 
 
 // post Photo to DOM
